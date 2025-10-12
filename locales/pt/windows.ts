@@ -1,3 +1,6 @@
+import { MdEmail, MdPhone } from "react-icons/md";
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+
 export const windows = {
   ABOUT: {
     title: "Sobre Mim",
@@ -25,7 +28,40 @@ Este portfólio reflete minha jornada técnica e criativa — um espaço onde te
   },
   CONTACT: {
     title: "Entre em Contato",
-    content:
-      "Você pode me contatar por e-mail em roma.veloso@email.com ou conectar-se comigo no LinkedIn.",
+    content: "Você pode entrar em contato comigo pelos seguintes canais:",
+    contactItems: [
+      {
+        icon: MdEmail,
+        label: "E-mails",
+        value: "romariojonas@outlook.com.br | romario.veloso@ufpe.br",
+        link: "mailto:romariojonas@outlook.com.br",
+      },
+      {
+        icon: MdPhone,
+        label: "Telefone",
+        value: "+55 (81) 98538-4702",
+        link: "tel:+5581985384702",
+      },
+      {
+        icon: FaLinkedin,
+        label: "LinkedIn",
+        value: "Romario Jonas",
+        link: "https://www.linkedin.com/in/romario-jonas-veloso-427373175",
+      },
+      {
+        icon: FaInstagram,
+        label: "Instagram",
+        value: "romadeoliveira1",
+        link: "https://www.instagram.com/romadeoliveira1/",
+      },
+      {
+        icon: FaGithub,
+        label: "GitHub",
+        value: "Romadeoliveira3",
+        link: "https://github.com/Romadeoliveira3",
+      },
+    ],
+    footer:
+      "Fique à vontade para entrar em contato para colaborações, projetos ou apenas trocar ideias sobre tecnologia e inovação.",
   },
 };

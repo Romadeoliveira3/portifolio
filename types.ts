@@ -1,24 +1,24 @@
-import type React from 'react';
+import type React from "react";
 
 export enum Language {
-  EN = 'en',
-  PT = 'pt',
+  EN = "en",
+  PT = "pt",
 }
 
 export enum WindowType {
-  ABOUT = 'ABOUT',
-  PROJECTS = 'PROJECTS',
-  CONTACT = 'CONTACT',
-  EXPERIENCE = 'EXPERIENCE',
-  EDUCATION = 'EDUCATION',
+  ABOUT = "ABOUT",
+  PROJECTS = "PROJECTS",
+  CONTACT = "CONTACT",
+  EXPERIENCE = "EXPERIENCE",
+  EDUCATION = "EDUCATION",
 }
 
 export interface DesktopIconType {
-  id: WindowType | 'GITHUB' | 'LINKEDIN' | 'LATTES';
+  id: WindowType | "GITHUB" | "LINKEDIN" | "LATTES";
   // FIX: Changed type to support multilingual labels.
   label: string;
   icon: React.ComponentType<{ className?: string }>;
-  type: 'window' | 'link';
+  type: "window" | "link";
   url?: string;
 }
 
@@ -58,4 +58,11 @@ export interface EducationItem {
   period: string;
   // FIX: Changed type to support multilingual descriptions.
   description?: string;
+}
+
+export interface ContactItem {
+  icon: React.ElementType;
+  label: string;
+  value: string;
+  link: string;
 }

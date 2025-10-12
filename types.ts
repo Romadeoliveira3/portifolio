@@ -11,6 +11,7 @@ export enum WindowType {
   CONTACT = "CONTACT",
   EXPERIENCE = "EXPERIENCE",
   EDUCATION = "EDUCATION",
+  WEB = "WEB",
 }
 
 export interface DesktopIconType {
@@ -30,6 +31,7 @@ export interface WindowInstance {
   size: { width: number; height: number };
   zIndex: number;
   isMinimized: boolean;
+  url?: string;
 }
 
 export interface Project {

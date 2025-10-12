@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect, useMemo } from "react";
+import robotImg from "./ME-ROBOT.png";
 import { Desktop } from "./components/Desktop";
 import { Taskbar } from "./components/Taskbar";
 import { StartMenu } from "./components/StartMenu";
@@ -129,7 +130,10 @@ const App: React.FC = () => {
   const isTaskbarVisible = !isMobile || windows.length === 0;
 
   return (
-    <div className="w-screen h-screen bg-black bg-no-repeat bg-center bg-cover sm:bg-right sm:bg-[length:auto_110vh] bg-[url('ME-ROBOT.png')] font-sans overflow-hidden">
+    <div
+      className="w-screen h-screen bg-black bg-no-repeat bg-center bg-cover sm:bg-right sm:bg-[length:auto_110vh] font-sans overflow-hidden"
+      style={{ backgroundImage: `url(${robotImg})` }}
+    >
       {showInstaller && (
         <InstallerWizard onFinish={handleInstallerFinish} isMobile={isMobile} />
       )}

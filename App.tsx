@@ -129,7 +129,7 @@ const App: React.FC = () => {
   const isTaskbarVisible = !isMobile || windows.length === 0;
 
   return (
-    <div className="w-screen h-screen bg-black bg-no-repeat bg-right bg-[length:auto_110vh] bg-[url('ME-ROBOT.png')] font-sans overflow-hidden">
+    <div className="w-screen h-screen bg-black bg-no-repeat bg-center bg-cover sm:bg-right sm:bg-[length:auto_110vh] bg-[url('ME-ROBOT.png')] font-sans overflow-hidden">
       {showInstaller && (
         <InstallerWizard onFinish={handleInstallerFinish} isMobile={isMobile} />
       )}

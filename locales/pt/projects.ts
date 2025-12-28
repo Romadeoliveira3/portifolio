@@ -2,6 +2,13 @@ import type { Project } from "../../types";
 
 export const projects: Project[] = [
   {
+    title: "Mercadigo",
+    description:
+      "Aplicação para acompanhar o valor do carrinho em tempo real, com OCR e IA para categorização de produtos. Desenvolvida em Go com infraestrutura Docker e autenticação via Keycloak. Usuário: teste@example.com Senha: test123 ",
+    tech: ["Go", "Google Gemini", "OCR", "Docker", "Keycloak", "React"],
+    url: "https://www.mercadigo.com",
+  },
+  {
     title: "Portfólio SO",
     description:
       "Este mesmo portfólio que você está usando. Um ambiente de desktop interativo construído com React e Tailwind CSS.",
